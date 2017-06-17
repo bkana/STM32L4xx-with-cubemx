@@ -52,7 +52,7 @@ int main(void)
 	
 	CANBUSTxPacket[0] = 0xAA;
   CANBUSTxPacket[1] = 0xAE;
-	CANBUSTxPacket[2] = 0x55;
+	
 	
 	
   while (1)
