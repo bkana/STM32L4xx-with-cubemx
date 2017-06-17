@@ -1,0 +1,159 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.16a
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: kana berrux, hs-esslingen, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.16a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 (build 20)
+Assembler:       Armasm.exe V5.06 (build 20)
+Linker/Locator:  ArmLink.exe V5.06 (build 20)
+Library Manager: ArmAr.exe V5.06 (build 20)
+Hex Converter:   FromElf.exe V5.06 (build 20)
+CPU DLL:         SARMCM3.DLL V5.16a
+Dialog DLL:      DCM.DLL V1.13.2.0
+Target DLL:      UL2CM3.DLL V1.155.12.0
+Dialog DLL:      TCM.DLL V1.14.5.0
+ 
+<h2>Project:</h2>
+C:\Users\berrux\Documents\neu_LCD\CAN_Test\MDK-ARM\CAN_Test\test_Can_Bus.uvprojx
+Project File Date:  05/04/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 (build 20)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling led.c...
+compiling canbus.c...
+compiling RTX_Conf_CM.c...
+compiling CAN_STM32F4xx.c...
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\CMSIS\Driver\CAN_STM32F4xx.h(52): error:  #35: #error directive: "No CAN configured in RTE_Device.h!"
+  #error "No CAN configured in RTE_Device.h!"
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\CMSIS\Driver\CAN_STM32F4xx.c: 0 warnings, 1 error
+compiling main.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_can.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_pwr.c...
+assembling startup_stm32f407xx.s...
+compiling stm32f4xx_hal_rcc.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+".\Objects\test_Can_Bus.axf" - 1 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ::CMSIS:RTOS:1.0 (API)
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: RTOS Version: 1.0
+   * Component: CAN Version: 1.00
+   * Component: Keil RTX Version: 4.80.0
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F7xx_DFP.2.4.0.pack
+                ::Device:STM32Cube Framework:1.0.0 (API)
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.7.0.pack
+                Keil::Device:Startup:2.4.2
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.4.2
+   * Component: CAN Version: 1.4.2
+   * Component: Classic Version: 1.4.2
+   * Component: Common Version: 1.4.2
+   * Component: Cortex Version: 1.4.2
+   * Component: GPIO Version: 1.4.2
+   * Component: PWR Version: 1.4.2
+   * Component: CAN Version: 1.2
+   * Component: RCC Version: 1.4.2
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\berrux\Documents\neu_LCD\CAN_Test\MDK-ARM\CAN_Test\RTE
+  C:\Users\berrux\Documents\neu_LCD\CAN_Test\MDK-ARM\CAN_Test\RTE\Device\STM32F407VGTx
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Driver\Include
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\RTOS\RTX\INC
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\Drivers\STM32F4xx_HAL_Driver\Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::CMSIS:RTOS:1.0 (API)
+
+   * Component: ::CMSIS Driver:CAN:1.00 (API)
+      Include file:  CMSIS\Driver\Include\Driver_CAN.h
+
+   * Component: ARM::CMSIS:RTOS:Keil RTX:4.80.0
+      Source file:   CMSIS\RTOS\RTX\SRC\ARM\SVC_Table.s
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MsgQueue.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Mutex.c
+      Source file:   CMSIS\RTOS\RTX\Templates\RTX_Conf_CM.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MemPool.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\main.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Timer.c
+      Library file:  CMSIS\RTOS\RTX\LIB\ARM\RTX_CM4.lib
+      Include file:  CMSIS\RTOS\RTX\INC\cmsis_os.h
+      Include file:  CMSIS\RTOS\RTX\UserCodeTemplates\osObjects.h
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Semaphore.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MailQueue.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Thread.c
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: ::Device:STM32Cube Framework:1.0.0 (API)
+
+   * Component: Keil::Device:Startup:2.4.2
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+
+   * Component: Keil::Device:STM32Cube HAL:CAN:1.4.2
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c
+
+   * Component: Keil::Device:STM32Cube Framework:Classic:1.4.2
+      Include file:  MDK\Templates\Inc\stm32f4xx_hal_conf.h
+      Source file:   MDK\Templates\Src\stm32f4xx_it.c
+      Include file:  MDK\Templates\Inc\main.h
+      Include file:  CMSIS\Driver\Config\RTE_Device.h
+      Include file:  MDK\Templates\Inc\stm32f4xx_it.h
+      Source file:   MDK\Templates\Src\stm32f4xx_hal_msp.c
+      Source file:   MDK\Templates\Src\main.c
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.4.2
+      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.4.2
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.4.2
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.4.2
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
+
+   * Component: Keil::CMSIS Driver:CAN:1.2
+      Source file:   CMSIS\Driver\CAN_STM32F4xx.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.4.2
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+Target not created.
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>
